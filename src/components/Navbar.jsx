@@ -31,15 +31,18 @@ const Navbar = () => {
         </Link>
         <ul className="list-none sm:flex hidden flex-row gap-10 ">
           {navLinks.map((item) => (
-            <Link
-              to={`#${item.id}`}
+            <li
+            onClick={()=>setActive(item.title)}
               key={item.id}
               className={`${
                 active === item.title ? "text-white" : "text-secondary"
               }`}
+
             >
+              <a href={`#${item.id}`}>
               {item.title}
-            </Link>
+              </a>
+            </li>
           ))}
         </ul>
         <div className="sm:hidden flex flex-1 justify-end items-center">
@@ -47,16 +50,17 @@ const Navbar = () => {
           <div className={`${toggle?"flex":"hidden"} p-6 absolute black-gradient top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}>
           <ul className="list-none flex  flex-col gap-4 justify-end items-start ">
           {navLinks.map((item) => (
-            <Link
-              onClick={()=>{setToggle(!toggle);}}
+            <li
+              onClick={()=>{setToggle(!toggle); setActive("");}}
               to={`#${item.id}`}
               key={item.id}
               className={`${
                 active === item.title ? "text-white" : "text-secondary"
               } font-poppins font-medium cursor-pointer text-[16px] hover:text-white`}
             >
-              {item.title}
-            </Link>
+              <a href="">
+              {item.title}</a>
+            </li>
           ))}
         </ul>
           </div>
