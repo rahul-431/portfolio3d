@@ -26,7 +26,7 @@ const Navbar = () => {
             className="w-12 h-12 object-contain bg-primary"
           />
           <p className="text-white text-[18px] font-bold cursor-pointer">
-            Rahul Mijar <span className="sm:hidden inline-block">| Portfolio</span>
+            Rahul Mijar <span className="hidden sm:inline-block">| Portfolio</span>
           </p>
         </Link>
         <ul className="list-none sm:flex hidden flex-row gap-10 ">
