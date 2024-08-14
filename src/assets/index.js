@@ -26,7 +26,6 @@ import webify from "./company/webify.png";
 
 import java from "./tech/java.svg";
 import csharp from "./tech/csharp.svg";
-
 export {
   logo,
   backend,
@@ -52,5 +51,6 @@ export {
   truenary,
   webify,
   csharp,
-  java
+  java,
+  
 };
