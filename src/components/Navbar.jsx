@@ -58,7 +58,7 @@ const Navbar = () => {
                 active === item.title ? "text-white" : "text-secondary"
               } font-poppins font-medium cursor-pointer text-[16px] hover:text-white`}
             >
-              <a href="">
+              <a href={`#${item.id}`}>
               {item.title}</a>
             </li>
           ))}
