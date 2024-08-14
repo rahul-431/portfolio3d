@@ -36,11 +36,12 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-7"
       >
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident
-        fugit consequuntur cupiditate minima autem nam harum tempore omnis
-        libero? Error dignissimos porro laborum labore magnam numquam totam
-        repudiandae optio alias rem libero saepe est, maiores ea voluptas,
-        soluta aut recusandae.
+        I am a passionate software developer with a strong foundation in both
+        front-end and back-end development. With a deep understanding of modern
+        web technologies and a keen eye for detail, I strive to create seamless,
+        user-friendly applications that not only meet but exceed expectations.
+        My journey in the tech world has been fueled by a relentless curiosity
+        and a drive to continuously learn and adapt to new challenges.
       </motion.p>
       <div className="mt-20 flex flex-wrap gap-10">
         {services.map((item, index) => (

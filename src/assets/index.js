@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+import logo from "./new_logo.png";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -21,14 +21,11 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import truenary from "./company/truenary.svg";
+import webify from "./company/webify.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import java from "./tech/java.svg";
+import csharp from "./tech/csharp.svg";
 
 export {
   logo,
@@ -52,11 +49,8 @@ export {
   tailwind,
   typescript,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
-  carrent,
-  jobit,
-  tripguide,
+  truenary,
+  webify,
+  csharp,
+  java
 };

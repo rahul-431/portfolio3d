@@ -18,6 +18,7 @@ const App = () => {
           <StarsCanvas/>
         </div>
       </div>
+      
     </Router>
   )
 }

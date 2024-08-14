@@ -23,9 +23,9 @@ const Navbar = () => {
           <img
             src={logo}
             alt="logo"
-            className="w-12 h-12 object-contain bg-primary"
+            className="xs:w-14 xs:h-14 w-10 h-10 object-contain bg-white rounded-full"
           />
-          <p className="text-white text-[18px] font-bold cursor-pointer">
+          <p className="text-white text-[20px] font-bold cursor-pointer">
             Rahul Mijar <span className="hidden sm:inline-block">| Portfolio</span>
           </p>
         </Link>
@@ -36,7 +36,7 @@ const Navbar = () => {
               key={item.id}
               className={`${
                 active === item.title ? "text-white" : "text-secondary"
-              }`}
+              } hover:text-white text-lg`}
 
             >
               <a href={`#${item.id}`}>

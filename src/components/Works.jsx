@@ -5,7 +5,9 @@ import { github } from "../assets"
 import { SectionWrapper } from "../hoc"
 import { projects } from "../constants"
 import { fadeIn,textVariant } from "../utils/motion"
+import { Link } from "react-router-dom"
 const ProjectCard=({index,name,description,tags,image,source_code_link})=>{
+
   return (
     <motion.div variants={fadeIn("up","spring",index*0.5,0.75)}>
       <Tilt options={{
@@ -58,8 +60,11 @@ const Works = () => {
           ))
         }
       </div>
+      <div className="flex justify-start items-center mt-10">
+        <Link to="https://rahulmijar.vercel.app/#/projects" target="_blank" className="bg-tertiary py-2 px-4 text-center rounded-md text-white font-medium">View all projects</Link>
+      </div>
     </>
   )
 }
 
-export default SectionWrapper(Works,"work");
+export default SectionWrapper(Works,"project");
